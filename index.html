@@ -5,24 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { position: fixed; bottom: 8px; left: 0; right: 0; margin: 0 auto; padding-inline: 8px; font-size: 11px; text-align: center;}
     .attribution a { color: hsl(228, 45%, 44%); }
+    .pixel {
+      position: fixed;
+      inset: 0;
+      filter: invert(1);
+      opacity: 0.5;
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <img src="./design/mobile-design.jpg" alt="" class="pixel">
+  <main class="page">
+    <article class="qr-card">
+      <img src="./images/image-qr-code.png" alt="qr-code to scan" class="qr-img">
+      <h2 class="qr-title">
+        Improve your front-end skills by building projects
+      </h2>
+      <p class="qr-descr">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+    </article>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/eugenia-antonova-7b4511276/">Eugenia Antonova</a>.
   </div>
 </body>
 </html>

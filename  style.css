@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Outfit-Regular"),
+    url('./font/Outfit-Regular.woff2') format('woff2'),
+    url('./font/Outfit-Regular.woff2') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Outfit-Bold"),
+    url('./font/Outfit-Bold.woff2') format('woff2'),
+    url('./font/Outfit-Bold.woff2') format('woff');
+    font-display: swap;
+}
+
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+.page {
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grayish-blue);
+}
+
+.qr-card {
+    max-width: 315px;
+    padding: 14px 14px 40px;
+    background-color: var(--white);
+    border-radius: 18px;
+}
+
+.qr-card > img {
+    margin-bottom: 24px;
+    display: block;
+    border-radius: 12px;
+}
+
+.qr-card > :where(h2, p) {
+    padding-inline: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+.qr-card > h2 {
+    margin-bottom: 16px;
+}
