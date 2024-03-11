@@ -1,18 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>Frontend Mentor | QR code component</title>
   <style>
-    .attribution { position: fixed; bottom: 8px; left: 0; right: 0; margin: 0 auto; padding-inline: 8px; font-size: 11px; text-align: center;}
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @font-face {
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Outfit-Regular"),
+        url('./font/Outfit-Regular.woff2') format('woff2'),
+        url('./font/Outfit-Regular.woff2') format('woff');
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Outfit";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Outfit-Bold"),
+        url('./font/Outfit-Bold.woff2') format('woff2'),
+        url('./font/Outfit-Bold.woff2') format('woff');
+      font-display: swap;
+    }
+
+
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Outfit", sans-serif;
+      font-style: normal;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .page {
+      min-height: 100vh;
+      min-height: 100svh;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--grayish-blue);
+    }
+
+    .qr-card {
+      max-width: 315px;
+      padding: 14px 14px 40px;
+      background-color: var(--white);
+      border-radius: 18px;
+    }
+
+    .qr-card>img {
+      margin-bottom: 24px;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .qr-card> :where(h2, p) {
+      padding-inline: 14px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .qr-card>h2 {
+      margin-bottom: 16px;
+    }
+
+    .attribution {
+      position: fixed;
+      bottom: 8px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding-inline: 8px;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <main class="page">
     <article class="qr-card">
@@ -25,10 +117,11 @@
       </p>
     </article>
   </main>
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.linkedin.com/in/eugenia-antonova-7b4511276/">Eugenia Antonova</a>.
   </div>
 </body>
+
 </html>
